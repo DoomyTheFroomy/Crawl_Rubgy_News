@@ -12,9 +12,11 @@
   ],
   "name": "crawl_rubgy_news",
   "description": "This is a scraper that runs on [Morph](https://morph.io). To get started [see the documentation](https://morph.io/documentation)",
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^10.0.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
