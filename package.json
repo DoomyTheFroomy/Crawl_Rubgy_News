@@ -2,12 +2,28 @@
   "version": "0.0.1",
   "main": "scraper.js",
   "dependencies": {
-    "cheerio": "latest",
-    "request": "latest",
-    "sqlite3": "latest"
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.81.0",
+    "sqlite3": "^3.1.8"
   },
   "keywords": [
     "scraper",
     "morph"
-  ]
+  ],
+  "name": "crawl_rubgy_news",
+  "description": "This is a scraper that runs on [Morph](https://morph.io). To get started [see the documentation](https://morph.io/documentation)",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoomyTheFroomy/Crawl_Rubgy_News.git"
+  },
+  "author": "DoomyTheFroomy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DoomyTheFroomy/Crawl_Rubgy_News/issues"
+  },
+  "homepage": "https://github.com/DoomyTheFroomy/Crawl_Rubgy_News#readme"
 }
