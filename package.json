@@ -13,7 +13,7 @@
   "name": "crawl_rubgy_news",
   "description": "This is a scraper that runs on [Morph](https://morph.io). To get started [see the documentation](https://morph.io/documentation)",
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^11.0.0"
   },
   "scripts": {
     "test": "standard"
