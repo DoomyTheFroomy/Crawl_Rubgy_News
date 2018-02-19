@@ -3,7 +3,7 @@
 var cheerio = require('cheerio')
 var request = require('request')
 var sqlite3 = require('sqlite3').verbose()
-
+var pageCrawler = require('./lib/PageRugbyCrawler')
 function initDatabase (callback) {
 // Set up sqlite database.
   var db = new sqlite3.Database('data.sqlite')
@@ -42,13 +42,15 @@ function fetchPage (url, callback) {
 
 function run (db) {
   // Use request to read in pages.
-  fetchPage('https://morph.io', function (body) {
+  fetchPage('http://rugbyweb.de/index.php?show=leagues', function (body) {
     // Use cheerio to find things in the page with css selectors.
     var $ = cheerio.load(body)
 
-    $('div.media-body span.p-name').each(function () {
-      var value = $(this).text().trim()
-      updateRow(db, value)
+    $('table.menu a').each(function (index, el) {
+      console.log('http://rugbyweb.de/' + $(this).attr('href'))
+      pageCrawler.crawl('http://rugbyweb.de/' + $(this).attr('href'))
+      // var value = $(this).text().trim()
+      // updateRow(db, value)
     })
 
     readRows(db)
