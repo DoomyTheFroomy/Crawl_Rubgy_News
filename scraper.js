@@ -13,12 +13,12 @@ function initDatabase (callback) {
   })
 }
 
-function updateRow (db, value) {
-// Insert some data.
-  var statement = db.prepare('INSERT INTO data VALUES (?)')
-  statement.run(value)
-  statement.finalize()
-}
+// function updateRow (db, value) {
+// // Insert some data.
+//   var statement = db.prepare('INSERT INTO data VALUES (?)')
+//   statement.run(value)
+//   statement.finalize()
+// }
 
 function readRows (db) {
   // Read some data.
