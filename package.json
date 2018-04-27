@@ -3,8 +3,8 @@
   "main": "scraper.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "request": "^2.81.0",
-    "sqlite3": "^3.1.13"
+    "request": "^2.85.0",
+    "sqlite3": "^4.0.0"
   },
   "keywords": [
     "scraper",
@@ -13,7 +13,7 @@
   "name": "crawl_rubgy_news",
   "description": "This is a scraper that runs on [Morph](https://morph.io). To get started [see the documentation](https://morph.io/documentation)",
   "devDependencies": {
-    "standard": "^11.0.0"
+    "standard": "^11.0.1"
   },
   "scripts": {
     "test": "standard"
